@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+		<property name="hibernate.connection.datasource">java:/PostgresqlDS</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.current_session_context_class">org.hibernate.context.JTASessionContext</property>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.search.autoregister_listeners">false</property>
+		<property name="hibernate.show_sql">true</property>
+		<!-- <property name="hibernate.format_sql">true</property> -->
+		<property name="hibernate.use_sql_comments">true</property>
+		<!-- <property name="hibernate.jdbc.use_streams_for_binary">true</property> -->
+		
+		<!-- Usar en Desarrollo, comentar en Producción
+		Sirve para sincronizar los objetos de base con cambios en los pojos  
+        <property name="hbm2ddl.auto">update</property>-->
+
+		<!-- Para no usar jboss\common\lib -->
+		<property name="hibernate.validator.apply_to_ddl">false</property>
+		<property name="hibernate.validator.autoregister_listeners">false</property>
+		
+		<!-- Mapeos-->
+        
+    </session-factory>
+</hibernate-configuration>

@@ -10,9 +10,8 @@
 		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
 		<property name="hibernate.search.autoregister_listeners">false</property>
 		<property name="hibernate.show_sql">true</property>
-		<!-- <property name="hibernate.format_sql">true</property> -->
+		<property name="hibernate.format_sql">true</property>
 		<property name="hibernate.use_sql_comments">true</property>
-		<!-- <property name="hibernate.jdbc.use_streams_for_binary">true</property> -->
 		
 		<!-- Usar en Desarrollo, comentar en Producción
 		Sirve para sincronizar los objetos de base con cambios en los pojos  
@@ -23,6 +22,67 @@
 		<property name="hibernate.validator.autoregister_listeners">false</property>
 		
 		<!-- Mapeos-->
-        
+        <mapping class="com.web.deckshop.pojo.annotations.Tipotransaccion" />
+        <mapping class="com.web.deckshop.pojo.annotations.Revisionproveedor" />
+        <mapping class="com.web.deckshop.pojo.annotations.Estadoprovincia" />
+        <mapping class="com.web.deckshop.pojo.annotations.FacturaStatusfactura" />
+        <mapping class="com.web.deckshop.pojo.annotations.Detallepedido" />
+        <mapping class="com.web.deckshop.pojo.annotations.PedidoStatuspedido" />
+        <mapping class="com.web.deckshop.pojo.annotations.Direccioncliente" />
+        <mapping class="com.web.deckshop.pojo.annotations.Pais" />
+        <mapping class="com.web.deckshop.pojo.annotations.Parametro" />
+        <mapping class="com.web.deckshop.pojo.annotations.Cuenta" />
+        <mapping class="com.web.deckshop.pojo.annotations.Condicion" />
+        <mapping class="com.web.deckshop.pojo.annotations.Marca" />
+        <mapping class="com.web.deckshop.pojo.annotations.Producto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Tamanio" />
+        <mapping class="com.web.deckshop.pojo.annotations.Material" />
+        <mapping class="com.web.deckshop.pojo.annotations.ProductoMaterial" />
+        <mapping class="com.web.deckshop.pojo.annotations.Login" />
+        <mapping class="com.web.deckshop.pojo.annotations.PagoStatuspago" />
+        <mapping class="com.web.deckshop.pojo.annotations.Proveedor" />
+        <mapping class="com.web.deckshop.pojo.annotations.Color" />
+        <mapping class="com.web.deckshop.pojo.annotations.Cliente" />
+        <mapping class="com.web.deckshop.pojo.annotations.Carritocompra" />
+        <mapping class="com.web.deckshop.pojo.annotations.Ofertaespecial" />
+        <mapping class="com.web.deckshop.pojo.annotations.ProductoTamanio" />
+        <mapping class="com.web.deckshop.pojo.annotations.Transaccioncontable" />
+        <mapping class="com.web.deckshop.pojo.annotations.ProductoCondicion" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statusenvio" />
+        <mapping class="com.web.deckshop.pojo.annotations.Ciudad" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statuspago" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statusdetalleenvio" />
+        <mapping class="com.web.deckshop.pojo.annotations.ProductoProveedor" />
+        <mapping class="com.web.deckshop.pojo.annotations.Metodoenvio" />
+        <mapping class="com.web.deckshop.pojo.annotations.Banco" />
+        <mapping class="com.web.deckshop.pojo.annotations.Formapago" />
+        <mapping class="com.web.deckshop.pojo.annotations.Pago" />
+        <mapping class="com.web.deckshop.pojo.annotations.EnvioStatusenvio" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statusfactura" />
+        <mapping class="com.web.deckshop.pojo.annotations.Listadeseo" />
+        <mapping class="com.web.deckshop.pojo.annotations.Caracteristicasproducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.FormapagoCliente" />
+        <mapping class="com.web.deckshop.pojo.annotations.Descripcionproducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Tipoproducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Productorelacionado" />
+        <mapping class="com.web.deckshop.pojo.annotations.PedidoOfertaespecial" />
+        <mapping class="com.web.deckshop.pojo.annotations.Persona" />
+        <mapping class="com.web.deckshop.pojo.annotations.ListadeseoProducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Revisionproducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Imagenproducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Envio" />
+        <mapping class="com.web.deckshop.pojo.annotations.ProductoColor" />
+        <mapping class="com.web.deckshop.pojo.annotations.Pedido" />
+        <mapping class="com.web.deckshop.pojo.annotations.Detallefactura" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statusdetallepedido" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statusdetallefactura" />
+        <mapping class="com.web.deckshop.pojo.annotations.Factura" />
+        <mapping class="com.web.deckshop.pojo.annotations.Detalletecnicoproducto" />
+        <mapping class="com.web.deckshop.pojo.annotations.Contabilidad" />
+        <mapping class="com.web.deckshop.pojo.annotations.Grupocuenta" />
+        <mapping class="com.web.deckshop.pojo.annotations.Prioridad" />
+        <mapping class="com.web.deckshop.pojo.annotations.Empresa" />
+        <mapping class="com.web.deckshop.pojo.annotations.Statuspedido" />
+        <mapping class="com.web.deckshop.pojo.annotations.Detalleenvio" />
     </session-factory>
 </hibernate-configuration>
